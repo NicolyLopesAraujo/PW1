@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Orçamento </title>
+    <link rel="stylesheet" href="./CSS/form.css">
+
+    <script src="JS/script.js"></script>
+
+</head>
+<body>
+    <header class="cabeca">
+        <div class="divisao3">
+            <a href="index.html"><div class="logo"></div></a>
+        </div>
+        <div class="divisao3">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Menu.html">cardápio</a></li>
+                    <li><a href="#">Formulário</a></li>
+                    <li><a href="Galery.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="imagem">
+        <img class="imagem" src="./image/buffeett2.jpg">
+    </section>
+
+        <div class="text1">
+            <h5> ENTRE EM CONTATO </h2>
+        </div>
+        
+        <div class="text2"> 
+            <h1> FALE CONOSCO </h1>
+        </div>
+
+        <div class="text3">
+            <h4> Aqui você pode fazer o orçamento e </h4>
+            <h4>escolher o que melhor cabe no seu bolso!</h4> 
+        </div>
+
+        
+        <section class="linha">
+         <hr> 
+        </section>
+        
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <section class="formulario">
+
+        <form>
+            <div>
+                <label class="textForm1"> Nome* </label>
+                <input class="tx1" placeholder="Nome"type="text" id="txNome" name="txNome"/>
+            </div>
+            <br/>
+
+            <div>
+                <label class="textForm2"> E-mail* </label>
+                <input class="tx2" placeholder="E-mail"type="email" id="email" name="email"/>
+            </div>
+            <br/>
+
+            <div>
+                <label class="textForm3"> Cardápio* </label>
+                <input class="tx3" type="radio" id="txCardapio"/> <span> Jantar Completo </span>
+                <input class="tx3" type="radio" id="txCardapio"/> <span> Coquetel Premiun </span>
+                <input class="tx3" type="radio" id="txCardapio"/> <span> Coquetel Básico </span>
+            </div>
+            <br/>
+
+            <div>
+                <label class="textForm4"> Nº de convidados </label>
+                <input  class="tx4" placeholder="convidados" type="number" id="convidados"/>
+            </div>
+            <br/>
+
+            <div>
+                <label class="textForm5"> Adicionais </label>
+               
+                <input class="tx5" type="checkbox" name="adicionais[]" id="dj" value="dj"/> <span class="opcoes"> DJ </span>
+                <input class="tx5" type="checkbox" name="adicionais[]" id="mesaDeDoces" value="mesaDeDoces"/> <span class="opcoes"> Mesa de doces </span>
+                <input class="tx5" type="checkbox" name="adicionais[]" id="decoracao" value="decoracao"/> <span class="opcoes"> Decoração </span>
+                
+            </div>
+            <br/>
+
+            <div>
+                <label class="textForm6"> Escolha o estilo da música </label>
+                <select  class="tx6" name="estiloMusica" id="estiloMusica">
+                    <option> Escolha o estilo </option>
+                    <option> MPB </option>
+                    <option> Rock </option>
+                    <option> Eletrônica </option>
+                    <option> POP </option>
+                </select>
+            </div>
+            <br/>
+
+            <div>
+                <label class="textForm7"> Escolha a decoração </label>
+                <select class="tx7" name="decoracao" id="decoracao">
+                    <option> Escolha a opção </option>
+                    <option> Casamento </option>
+                    <option> Festa Tradicional </option>
+                    <option> Festa de 15 anos </option>
+                </select>
+            </div>
+            <br/>
+
+
+            <div>
+                <button class="botao" type="button" onclick="visualizardados()"> Enviar </button>
+            </div>
+            <br/>
+
+        </form>
+    </section>
+
+    <section>
+        <div>
+            <label class="valor"> Valor: </label>
+            <p class="soma" id="pSoma"></p>  
+        </div>
+
+    </section>
+
+
+    <footer class="rodape">
+        <div class="divisao4">
+             <h2>Contato</h2>
+                 <ul>
+                    
+                     <a href="https://www.instagram.com/"> <li><img class="social" src="./image/icons8-instagram-50.png" alt="">Instagram</li></a>
+                     <a href="https://web.whatsapp.com/"> <li><img class="social" src="./image/icons8-whatsapp-50.png" alt="">whatsapp</li></a>
+                     
+                      <a href="#"><li><img class="social" src="./image/icons8-telefone-50.png" alt="">(11)99999-9999</li></a>
+                 </ul>
+        </div>
+        <div class="divisao4">
+             <h2>Politica e Privacidade</h2>
+             <p>&copy; 2024 - Todos os direitos reservados para Buffet Paradise</p>
+        </div>
+        <div class="divisao4">
+             
+        </div>
+     </footer>
+ 
+ 
+    
+
+</body>
+</html>
